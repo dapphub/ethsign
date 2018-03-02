@@ -165,6 +165,7 @@ func main() {
 				cli.StringFlag{
 					Name: "passphrase-file",
 					Usage: "path to file containing account passphrase",
+					EnvVar: "ETH_PASSWORD",
 				},
 				cli.StringFlag{
 					Name: "chain-id",
@@ -358,8 +359,9 @@ func main() {
 					EnvVar: "ETH_FROM",
 				},
 				cli.StringFlag{
-					Name:  "passphrase-file",
-					Usage: "path to file containing account passphrase",
+					Name:   "passphrase-file",
+					Usage:  "path to file containing account passphrase",
+					EnvVar: "ETH_PASSWORD",
 				},
 				cli.StringFlag{
 					Name:  "data",
